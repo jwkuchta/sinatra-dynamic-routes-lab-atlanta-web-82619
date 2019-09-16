@@ -28,16 +28,6 @@ class App < Sinatra::Base
     result
   end
 
-  # get '/say/:number/:phrase' do
-  #   answer = ''
-
-  #   params[:number].to_i.times do
-  #     answer += params[:phrase]
-  #   end
-
-  #   answer
-  # end
-
   #accepts five words and returns a string containing all five words (i.e. word1 word2 word3 word4 word5).
   get '/say/:word1/:word2/:word3/:word4/:word5' do 
     @word1 = params[:word1]
